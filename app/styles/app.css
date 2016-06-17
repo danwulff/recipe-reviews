@@ -10,3 +10,15 @@
 .editing-item {
   color: #2670b5;
 }
+
+.admin-img {
+  float: right;
+  width: 50%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.image-clear {
+  clear: right;
+}

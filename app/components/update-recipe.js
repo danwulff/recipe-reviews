@@ -11,6 +11,7 @@ export default Ember.Component.extend({
       console.log("update update");
       var params = {
         title: this.get('newTitle'),
+        image: this.get('newImage'),
         ingredients: this.get('newIngredients'),
         directions: this.get('newDirections')
       };

@@ -1,5 +1,6 @@
 
 {{#if selectedRecipe}}
+  <img src={{selectedRecipe.image}} class="admin-img"/>
   <h2 class="editing-item">{{selectedRecipe.title}}</h2>
   <h5><strong>Ingredients:</strong> {{selectedRecipe.ingredients}}</h5>
   <h5><strong>Directions:</strong> {{selectedRecipe.directions}}</h5>
@@ -7,7 +8,7 @@
 {{/if}}
 
 
-<h4>Click a recipe below to edit or delete:</h4>
+<h4 class="image-clear">Click a recipe below to edit or delete:</h4>
 <ul>
   {{#each recipes as |recipe|}}
     {{#if (eq recipe selectedRecipe)}}

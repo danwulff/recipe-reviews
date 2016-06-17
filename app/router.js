@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('admin');
-  this.route('favorites');
+  this.route('recipe', {path: 'recipe/:recipe_id'});
 });
 
 export default Router;
