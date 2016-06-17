@@ -1,1 +1,12 @@
-<h2>admin</h2>
+<h1>Admin</h1>
+
+<div class="row">
+  <div class="col-xs-6">
+    <h3>Add a new recipe:</h3>
+    {{new-recipe newRecipe="newRecipe"}}
+  </div>
+  <div class="col-xs-6">
+    <h3>Recipes:</h3>
+    {{admin-recipe-list recipes=model.recipes updateRecipe="updateRecipe"}}
+  </div>
+</div>

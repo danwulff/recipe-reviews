@@ -1,0 +1,25 @@
+<div class="row">
+  {{#if selectedRecipe}}
+    <h2 class="editing-item">{{selectedRecipe.title}}</h2>
+    <p>
+      <strong>Ingredients:</strong> {{selectedRecipe.ingredients}}<br>
+      <strong>Directions:</strong> {{selectedRecipe.directions}}<br>
+    </p>
+    {{update-recipe updateRecipe="updateRecipe" deleteRecipe="deleteRecipe" recipe=selectedRecipe}}
+    <hr>
+  {{/if}}
+</div>
+
+
+<div class="row">
+  <h4>Click a recipe below to edit or delete:</h4>
+  <ul>
+    {{#each recipes as |recipe|}}
+      {{#if (eq recipe selectedRecipe)}}
+        <li {{action 'showRecipe' recipe}} class= "editing-item">{{recipe.title}}</li>
+      {{else}}
+        <li {{action 'showRecipe' recipe}}>{{recipe.title}}</li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>
