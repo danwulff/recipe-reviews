@@ -1,17 +1,20 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  averageRating: Ember.computed('comments', function() {
+  averageRating: Ember.computed('recipe.[].comments', function() {
     var total = 0;
+    var comments = this.get('recipe.comments');
 
-    var commentsTemp = this.get('comments');
+    comments.forEach(function(comment) {
+      console.log("comment: " + comment.comment);
+      console.log("rating: " + comment.rating);
+      console.log("username: " + comment.username);
 
-    commentsTemp.forEach(function(comment) {
       total = total + comment.rating;
     });
 
-    console.log(total);
+    // console.log(total);
 
-    return 2;
+    return total;
   })
 });
