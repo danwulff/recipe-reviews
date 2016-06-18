@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         username: this.get('username'),
         rating: parseInt(this.get('rating')),
         comment: this.get('comment'),
+        recipe: this.get('recipe'),
       };
       this.set('username', "");
       this.set('rating', "");
