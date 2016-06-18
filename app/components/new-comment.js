@@ -7,6 +7,9 @@ export default Ember.Component.extend({
     commentForm() {
       this.set('commentForm', true);
     },
+    closeForm() {
+      this.set('commentForm', false);
+    },
     newComment() {
       var params = {
         username: this.get('username'),
@@ -17,6 +20,7 @@ export default Ember.Component.extend({
       this.set('username', "");
       this.set('rating', "");
       this.set('comment', "");
+      this.set('commentForm', false);
       this.sendAction('newComment', params);
     }
   }
