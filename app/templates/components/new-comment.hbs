@@ -1,0 +1,13 @@
+{{#if commentForm}}
+<form>
+  <label for="username">username</label><br>
+  {{input value=username id="username" class="new-comment"}}<br>
+  <label for="rating">rating (0-5)</label><br>
+  {{input value=rating id="rating" type="number" min="0" max="5" class="new-comment"}}<br>
+  <label for="comment">comment</label><br>
+  {{textarea value=comment id="comment" class="new-comment" rows="4"}}<br>
+  <button type="button" {{action 'newComment'}}>Save</button>
+</form>
+{{else}}
+  <button type="button" {{action "commentForm"}}>Save Comment</button>
+{{/if}}

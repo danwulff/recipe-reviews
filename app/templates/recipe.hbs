@@ -1,1 +1,12 @@
-<h3>recipe page</h3>
+<h2>{{model.recipe.title}}</h2>
+<h4>rating</h4>
+<img src={{model.recipe.image}} class="recipe-img"/>
+<p>
+  Directions:<br>
+  {{model.recipe.directions}}
+</p>
+<br><br>
+<h3>leave a comment below:</h3>
+{{new-comment recipe=model.recipe addComment="addComment"}}
+<br><br>
+<h4>comments:</h4>

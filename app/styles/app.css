@@ -40,3 +40,11 @@
   list-style-position: inside;
   padding-left: 10px;
 }
+
+/*recipe page*/
+.recipe-img {
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

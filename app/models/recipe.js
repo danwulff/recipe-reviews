@@ -5,5 +5,5 @@ export default DS.Model.extend({
   image: DS.attr(),
   ingredients: DS.attr(),
   directions: DS.attr(),
-  reviews: DS.hasMany('review', {async: true})
+  comments: DS.hasMany('comment', {async: true})
 });
