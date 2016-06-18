@@ -10,7 +10,7 @@ export default Ember.Service.extend({
         found = true;
         return;
       }
-    })
+    });
     if(!found) {
       this.get('items').pushObject(addedItem);
     }

@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export function commentRating(params) {
+export function commentRatingStars(params) {
 
   var commentRating = params[0];
 
@@ -31,4 +31,4 @@ export function commentRating(params) {
   }
 }
 
-export default Ember.Helper.helper(commentRating);
+export default Ember.Helper.helper(commentRatingStars);

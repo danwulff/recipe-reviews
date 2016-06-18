@@ -7,10 +7,6 @@ export default Ember.Route.extend({
       recipe: this.store.findRecord('recipe', params.recipe_id),
     });
   },
-  averageRating: Ember.computed('recipe.@each.comments', function() {
-
-    return 1;
-  }),
   actions: {
     newComment(params) {
       var newComment = this.store.createRecord('comment', params);
