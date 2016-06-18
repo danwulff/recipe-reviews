@@ -22,3 +22,12 @@
 .image-clear {
   clear: right;
 }
+
+.tile {
+  text-align: center;
+}
+
+.tile-img {
+  max-width: 100%;
+  border-radius: 5px;
+}

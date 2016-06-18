@@ -10,7 +10,7 @@ export default Ember.Component.extend({
         directions: this.get('directions')
       };
       this.set('title', "");
-      his.set('image', "");
+      this.set('image', "");
       this.set('ingredients', "");
       this.set('directions', "");
       this.sendAction('newRecipe', params);
