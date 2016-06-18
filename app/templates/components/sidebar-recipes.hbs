@@ -1,0 +1,5 @@
+<ul class="sidebar-list">
+    {{#each favorites.items as |recipe|}}
+      <li>{{#link-to 'recipe' recipe.id}}{{recipe.title}}{{/link-to}}</li>
+    {{/each}}
+</ul>

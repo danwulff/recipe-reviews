@@ -1,3 +1,5 @@
+/*admin page*/
+
 .new-recipe {
   width: 80%;
 }
@@ -23,6 +25,8 @@
   clear: right;
 }
 
+/*index page*/
+
 .tile {
   text-align: center;
 }
@@ -30,4 +34,9 @@
 .tile-img {
   max-width: 100%;
   border-radius: 5px;
+}
+
+.sidebar-list {
+  list-style-position: inside;
+  padding-left: 10px;
 }
