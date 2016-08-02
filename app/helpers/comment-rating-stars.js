@@ -27,7 +27,7 @@ export function commentRatingStars(params) {
   } else if (commentRating > 0) { //empty star for very low ratings
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-star-empty"></span>');
   } else {
-    return Ember.String.htmlSafe('-no rating(s)-');
+    return Ember.String.htmlSafe('-no ratings-');
   }
 }
 
