@@ -1,7 +1,6 @@
 # Recipe-reviews
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This ember app is an example of a "recipe review" website, in which an 'admin' can post new recipes and users can review the said recipes. The website makes use of firebase as a database.
 
 ## Prerequisites
 
@@ -50,4 +49,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
